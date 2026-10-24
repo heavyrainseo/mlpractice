@@ -1,0 +1,22 @@
+[project]
+name = "mlpractice"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Prof. Seo", email = "hvyrain@ysc.ac.kr" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "jupyterlab>=4.6.4",
+    "numpy>=2.5.4",
+    "pandas>=3.1.0",
+    "seaborn>=0.13.2",
+]
+
+[project.scripts]
+mlpractice = "mlpractice:main"
+
+[build-system]
+requires = ["uv_build>=0.13.5,<0.14.0"]
+build-backend = "uv_build"
